@@ -2,7 +2,6 @@ import { Injectable, NotFoundException, UnauthorizedException } from '@nestjs/co
 import { PrismaService } from '../prisma/prisma.service';
 import { LoginRequestDto } from '../dto/login.dto';
 import { compareSync } from 'bcrypt'
-import { sign } from 'jsonwebtoken'
 import { User } from '@prisma/client';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
